@@ -436,7 +436,8 @@ footer {
         top: 100%;
         left: 0;
         right: 0;
-        background: white;
+        margin-top: 10px;
+        background: var(--muted);
         padding: 20px;
         box-shadow: 0 4px 12px rgba(0,0,0,0.1);
         border-radius: 0 0 12px 12px;
