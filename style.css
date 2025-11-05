@@ -69,7 +69,7 @@ body {
     display: flex;
     align-items: center;
     padding: 40px 0;
-    
+
 }
 
 .hero-grid {
@@ -179,7 +179,7 @@ body {
     width: 35%;
     list-style: none;
     padding: 0;
-    margin-top: 12px ;
+    margin-top: 12px;
 }
 
 .skills li {
@@ -206,12 +206,13 @@ body {
         max-width: 100%
     }
 
-    .skills{
+    .skills {
         width: 100%;
     }
+
     .skills li {
         font-size: 12px;
-        
+
     }
 }
 
@@ -289,6 +290,105 @@ body {
     box-shadow: 0 20px 60px rgba(16, 24, 40, 0.12)
 }
 
+/* Projects Section */
+.project-section {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 24px;
+}
+
+.section-title {
+    font-size: 42px;
+    color: var(--text);
+    margin-bottom: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.section-subtitle {
+    color: var(--muted);
+    font-size: 18px;
+    margin-bottom: 48px;
+    text-align: center;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+}
+
+.project-card {
+    background: var(--bg);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    border-color: var(--accent);
+}
+
+.project-content {
+    padding: 24px;
+}
+
+.project-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 8px;
+}
+
+.project-desc {
+    color: var(--muted);
+    margin-bottom: 16px;
+    font-size: 15px;
+}
+
+.project-tech {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.tech-tag {
+    background: white;
+    color: var(--accent);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.project-links {
+    margin-top: 20px;
+    display: flex;
+    gap: 12px;
+}
+
+.project-link {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+
+.project-link:hover {
+    background: rgba(123, 59, 255, 0.1);
+}
+
+
+
 /* Contact Section */
 .contact {
     padding: 80px 0;
@@ -361,16 +461,16 @@ body {
     .contact {
         padding: 60px 0;
     }
-    
+
     .contact h2 {
         font-size: 28px;
     }
-    
+
     .contact-intro {
         font-size: 16px;
         margin-bottom: 30px;
     }
-    
+
     .contact-grid {
         gap: 40px;
     }
@@ -439,27 +539,27 @@ footer {
         margin-top: 10px;
         background: var(--muted);
         padding: 20px;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         border-radius: 0 0 12px 12px;
         text-align: center;
     }
 
-    .menu-checkbox:checked ~ .main-nav {
+    .menu-checkbox:checked~.main-nav {
         display: flex;
         flex-direction: column;
         gap: 15px;
     }
 
     /* Hamburger animation */
-    .menu-checkbox:checked ~ .menu-toggle span:nth-child(1) {
+    .menu-checkbox:checked~.menu-toggle span:nth-child(1) {
         transform: rotate(45deg) translate(5px, 5px);
     }
 
-    .menu-checkbox:checked ~ .menu-toggle span:nth-child(2) {
+    .menu-checkbox:checked~.menu-toggle span:nth-child(2) {
         opacity: 0;
     }
 
-    .menu-checkbox:checked ~ .menu-toggle span:nth-child(3) {
+    .menu-checkbox:checked~.menu-toggle span:nth-child(3) {
         transform: rotate(-45deg) translate(7px, -7px);
     }
 
@@ -481,6 +581,24 @@ footer {
     .hero-img {
         width: 320px;
         margin: 0 auto
+    }
+
+    .project-section {
+        margin: 40px auto;
+    }
+
+    .section-title {
+        font-size: 32px;
+    }
+
+    .section-subtitle {
+        font-size: 16px;
+        margin-bottom: 32px;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
     }
 
     .greeting {
