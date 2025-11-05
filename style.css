@@ -291,7 +291,7 @@ body {
 }
 
 /* Projects Section */
-.project-section {
+.projects {
     max-width: 1200px;
     margin: 80px auto;
     padding: 0 24px;
@@ -583,7 +583,7 @@ footer {
         margin: 0 auto
     }
 
-    .project-section {
+    .projects {
         margin: 40px auto;
     }
 
